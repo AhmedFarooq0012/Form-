@@ -16,12 +16,15 @@ form.addEventListener("submit", function(event) {
         age: document.getElementById("age").value,
         rollNumber: document.getElementById("r_number").value
     };
-    students.push(student);
+    if(student.name ==="" || student.email === "" || student.age === "" || student.rollNumber === ""){
+        console.log ("please fill all the fields")
+    }
+    else students.push(student);
     console.log(students);
 
     form.reset();
     console.log("data submitted successfully")
 
 
-    
+
 });
