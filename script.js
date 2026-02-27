@@ -25,6 +25,4 @@ form.addEventListener("submit", function(event) {
     form.reset();
     console.log("data submitted successfully")
 
-
-
 });
