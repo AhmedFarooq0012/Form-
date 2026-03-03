@@ -22,19 +22,17 @@ form.addEventListener("submit", function(event) {
     if(student.name ==="" || student.email === "" || student.age === "" || student.rollNumber === ""){
         console.log ("please fill all the fields")
     }
-    else{
-        students.push(student)
+    else if (editIndex === -1) {
+        students.push(student);
+    } 
+    // UPDATE
+    else {
+        students[editIndex] = student;
+        editIndex = -1;
     }
 
-    //  if (editIndex === -1) {
-    //     students.push(student);
-    // } 
-    // // UPDATE
-    // else {
-    //     students[editIndex] = student;
-    //     editIndex = -1;
-    // }
-
+    form.reset();
+  
     form.reset();
     displayData();
 
