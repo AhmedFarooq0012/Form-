@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-
-body { background: white; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      background: white;
+    }
+  </style>
 </head>
-<body>
-    <header><h1>My Form</h1></header>
-    <form id = "myform">
 
-        <label for="name">Name</label><br>
-        <input type="text" id="name" placeholder="Enter Your Name">
-        <br><br>
-        <label for="email">Email</label><br>
-        <input type="text" id="email" placeholder="Enter Your Email">
-        <br><br>
-          <label for="age">Age</label><br>
-        <input type="text" id="age" placeholder="Enter Your Age">
-        <br><br>
-          <label for="r_number">Roll Number</label><br>
-        <input type="text" id="r_number" placeholder="Enter Your Roll Number">
-        <br><br>
-        <button type="submit  "> Submit</button>
-    
+<body onload="checkCookie()">
+  <header>
+    <h1>My Form</h1>
+  </header>
+  <form id="myform">
 
-        <!-- this is second commit -->
-         <!-- Read the data -->
-
-          <!-- update the data -->
-
-           <!-- delete the data -->
+    <label for="name">Name</label><br>
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <br><br>
+    <label for="email">Email</label><br>
+    <input type="text" id="email" placeholder="Enter Your Email">
+    <br><br>
+    <label for="age">Age</label><br>
+    <input type="text" id="age" placeholder="Enter Your Age">
+    <br><br>
+    <label for="r_number">Roll Number</label><br>
+    <input type="text" id="r_number" placeholder="Enter Your Roll Number">
+    <br><br>
+    <button type="submit  "> Submit</button>
 
 
+    <!-- this is second commit -->
+    <!-- Read the data -->
 
-    </form>
-    <br>
-    <h2>Student List</h2>
-    <ul id="list"></ul>
-    
+    <!-- update the data -->
+
+    <!-- delete the data -->
 
 
-    <script src="script.js"></script>
+
+  </form>
+  <br>
+  <h2>Student List</h2>
+  <ul id="list"></ul>
+
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
